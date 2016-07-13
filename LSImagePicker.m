@@ -11,7 +11,7 @@
 
 #import "AlbumNavigationController.h"
 
-@interface LSImagePicker()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface LSImagePicker()<UICollectionViewDelegate,UICollectionViewDataSource,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property(nonatomic,strong)UICollectionView * imageCollection;
 
@@ -125,7 +125,62 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == self.photos.count) [self pickPhotoButtonClick:nil];
+    if (indexPath.row == self.photos.count) {
+        
+        UIImagePickerController * pickerVC = [[UIImagePickerController alloc]init];
+        
+        pickerVC.delegate = self;
+        
+        pickerVC.editing = YES;
+        pickerVC.allowsEditing = YES;
+        
+        
+        UIAlertController * actionSheet = [UIAlertController alertControllerWithTitle:@"请选择图片上传方式" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        UIAlertAction * photoAction = [UIAlertAction actionWithTitle:@"相册" style:UIAlertActionStyleDefault  handler:^(UIAlertAction * _Nonnull action) {
+            
+            [self pickPhotoButtonClick:nil];
+        }];
+        
+        UIAlertAction * cameraAction = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+            //判断是否有相机
+            if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+                
+                pickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+                [self.superVC presentViewController:pickerVC animated:YES completion:NULL];
+                
+                
+            }
+            else
+            {
+                
+                UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"相机功能未开启" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self.superVC dismissViewControllerAnimated:YES completion:nil];
+                }];
+                
+                [alert addAction:action];
+                [self.superVC presentViewController:alert animated:YES completion:nil];
+            }
+        }];
+        
+        UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+            [self.superVC dismissViewControllerAnimated:YES completion:NULL];
+            
+        }];
+        
+        [actionSheet addAction:photoAction];
+        [actionSheet addAction:cameraAction];
+        [actionSheet addAction:cancel];
+        [self.superVC  presentViewController:actionSheet animated:YES completion:NULL];
+    }
+
+    
+    
+//    if (indexPath.row == self.photos.count) [self pickPhotoButtonClick:nil];
 }
 
 #pragma mark Click Event
@@ -155,6 +210,18 @@
     
     [self.superVC presentViewController:navigation animated:YES completion:nil];
     
+}
+
+//选完的image/
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    [self.photos addObject:image];
+    
+    [self.imageCollection reloadData];
+    
+    [self.superVC dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)buildCS
