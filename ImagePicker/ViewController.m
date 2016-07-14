@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import "LSImagePicker.h"
+#import "ImageChooseManage.h"
 
 @interface ViewController ()
 
@@ -18,21 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    LSImagePicker * lsImagePicker = [[LSImagePicker alloc]initWithDelegate:self andTheMaxNumberChooseImage:3];
-    lsImagePicker.frame = CGRectMake(0, 20, 320, 400);
-    [self.view addSubview:lsImagePicker];
-    
-    __weak typeof(self) weakSelf = self;
-    
-    [lsImagePicker setDidTheImageArrayHasChange:^(NSArray<UIImage *> *photos) {
-       
-        NSLog(@"photos = %@",photos);
-        
-    }];
-    
+
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [[ImageChooseManage shareImageChooseManage] startChooseImageWithTheNumberMax:3 andChoosedImageArray:nil];
+    
+    
+    [[ImageChooseManage shareImageChooseManage]onTheChoosedImageArrayUpdate:^(NSArray *images) {
+        
+        NSLog(@"%@",images);
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

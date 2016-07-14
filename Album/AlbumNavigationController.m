@@ -95,6 +95,7 @@
 }
 
 - (void)observeAuthrizationStatusChange {
+    
     if ([[AlbumDataHandle manager] authorizationStatusAuthorized]) {
         [self pushToPhotoPickerViewController];
         [_tipLable removeFromSuperview];

@@ -43,6 +43,7 @@
 
 #pragma mark - 返回YES如果得到了授权
 - (BOOL)authorizationStatusAuthorized {
+    
     if (iOS8Later) {
         if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized) {
             return YES;

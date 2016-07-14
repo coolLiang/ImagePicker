@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA8CDC811D3786E000A3A9F7 /* ImageChooseManage.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CDC801D3786E000A3A9F7 /* ImageChooseManage.m */; };
+		DA8CDC841D37881300A3A9F7 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CDC831D37881300A3A9F7 /* Tools.m */; };
 		DAE7DDA01CFED4ED00DD11F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DD9F1CFED4ED00DD11F0 /* main.m */; };
 		DAE7DDA31CFED4ED00DD11F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDA21CFED4ED00DD11F0 /* AppDelegate.m */; };
 		DAE7DDA61CFED4ED00DD11F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDA51CFED4ED00DD11F0 /* ViewController.m */; };
 		DAE7DDA91CFED4ED00DD11F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE7DDA71CFED4ED00DD11F0 /* Main.storyboard */; };
 		DAE7DDAB1CFED4ED00DD11F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAE7DDAA1CFED4ED00DD11F0 /* Assets.xcassets */; };
 		DAE7DDAE1CFED4ED00DD11F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAE7DDAC1CFED4ED00DD11F0 /* LaunchScreen.storyboard */; };
-		DAE7DDB71CFED51E00DD11F0 /* LSImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDB61CFED51E00DD11F0 /* LSImagePickerViewController.m */; };
-		DAE7DDBA1CFED53300DD11F0 /* LSImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDB91CFED53300DD11F0 /* LSImageCollectionViewCell.m */; };
-		DAE7DDBD1CFED65500DD11F0 /* MY_pic_pic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7DDBB1CFED65500DD11F0 /* MY_pic_pic@2x.png */; };
-		DAE7DDBE1CFED65500DD11F0 /* MY_pic_pic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7DDBC1CFED65500DD11F0 /* MY_pic_pic@3x.png */; };
 		DAE7DDE71CFED6DE00DD11F0 /* AlbumDataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDC11CFED6DE00DD11F0 /* AlbumDataHandle.m */; };
 		DAE7DDE81CFED6DE00DD11F0 /* AlbumDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDC31CFED6DE00DD11F0 /* AlbumDataModel.m */; };
 		DAE7DDE91CFED6DE00DD11F0 /* AlbumListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDC51CFED6DE00DD11F0 /* AlbumListController.m */; };
@@ -43,12 +41,13 @@
 		DAE7DDFE1CFED6DE00DD11F0 /* PhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDE21CFED6DE00DD11F0 /* PhotoPreviewCell.m */; };
 		DAE7DDFF1CFED6DE00DD11F0 /* PhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDE41CFED6DE00DD11F0 /* PhotoPreviewController.m */; };
 		DAE7DE001CFED6DE00DD11F0 /* VideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DDE61CFED6DE00DD11F0 /* VideoPlayerController.m */; };
-		DAE7DE061CFEDF6A00DD11F0 /* LSImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7DE051CFEDF6A00DD11F0 /* LSImagePicker.m */; };
-		DAE7DE0D1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7DE0B1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@2x.png */; };
-		DAE7DE0E1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7DE0C1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA8CDC7F1D3786E000A3A9F7 /* ImageChooseManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageChooseManage.h; sourceTree = "<group>"; };
+		DA8CDC801D3786E000A3A9F7 /* ImageChooseManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageChooseManage.m; sourceTree = "<group>"; };
+		DA8CDC821D37881300A3A9F7 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		DA8CDC831D37881300A3A9F7 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		DAE7DD9B1CFED4EC00DD11F0 /* ImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAE7DD9F1CFED4ED00DD11F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAE7DDA11CFED4ED00DD11F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,12 +58,6 @@
 		DAE7DDAA1CFED4ED00DD11F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAE7DDAD1CFED4ED00DD11F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAE7DDAF1CFED4ED00DD11F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAE7DDB51CFED51E00DD11F0 /* LSImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSImagePickerViewController.h; sourceTree = "<group>"; };
-		DAE7DDB61CFED51E00DD11F0 /* LSImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSImagePickerViewController.m; sourceTree = "<group>"; };
-		DAE7DDB81CFED53300DD11F0 /* LSImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSImageCollectionViewCell.h; sourceTree = "<group>"; };
-		DAE7DDB91CFED53300DD11F0 /* LSImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSImageCollectionViewCell.m; sourceTree = "<group>"; };
-		DAE7DDBB1CFED65500DD11F0 /* MY_pic_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MY_pic_pic@2x.png"; sourceTree = "<group>"; };
-		DAE7DDBC1CFED65500DD11F0 /* MY_pic_pic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MY_pic_pic@3x.png"; sourceTree = "<group>"; };
 		DAE7DDC01CFED6DE00DD11F0 /* AlbumDataHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDataHandle.h; sourceTree = "<group>"; };
 		DAE7DDC11CFED6DE00DD11F0 /* AlbumDataHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumDataHandle.m; sourceTree = "<group>"; };
 		DAE7DDC21CFED6DE00DD11F0 /* AlbumDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumDataModel.h; sourceTree = "<group>"; };
@@ -103,10 +96,6 @@
 		DAE7DDE41CFED6DE00DD11F0 /* PhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoPreviewController.m; sourceTree = "<group>"; };
 		DAE7DDE51CFED6DE00DD11F0 /* VideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerController.h; sourceTree = "<group>"; };
 		DAE7DDE61CFED6DE00DD11F0 /* VideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerController.m; sourceTree = "<group>"; };
-		DAE7DE041CFEDF6A00DD11F0 /* LSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSImagePicker.h; sourceTree = "<group>"; };
-		DAE7DE051CFEDF6A00DD11F0 /* LSImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSImagePicker.m; sourceTree = "<group>"; };
-		DAE7DE0B1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiudian_icon_close_gray2@2x.png"; sourceTree = "<group>"; };
-		DAE7DE0C1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jiudian_icon_close_gray2@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,17 +112,11 @@
 		DAE7DD921CFED4EC00DD11F0 = {
 			isa = PBXGroup;
 			children = (
-				DAE7DE0B1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@2x.png */,
-				DAE7DE0C1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@3x.png */,
-				DAE7DE041CFEDF6A00DD11F0 /* LSImagePicker.h */,
-				DAE7DE051CFEDF6A00DD11F0 /* LSImagePicker.m */,
+				DA8CDC7F1D3786E000A3A9F7 /* ImageChooseManage.h */,
+				DA8CDC801D3786E000A3A9F7 /* ImageChooseManage.m */,
+				DA8CDC821D37881300A3A9F7 /* Tools.h */,
+				DA8CDC831D37881300A3A9F7 /* Tools.m */,
 				DAE7DDBF1CFED6DE00DD11F0 /* Album */,
-				DAE7DDBB1CFED65500DD11F0 /* MY_pic_pic@2x.png */,
-				DAE7DDBC1CFED65500DD11F0 /* MY_pic_pic@3x.png */,
-				DAE7DDB81CFED53300DD11F0 /* LSImageCollectionViewCell.h */,
-				DAE7DDB91CFED53300DD11F0 /* LSImageCollectionViewCell.m */,
-				DAE7DDB51CFED51E00DD11F0 /* LSImagePickerViewController.h */,
-				DAE7DDB61CFED51E00DD11F0 /* LSImagePickerViewController.m */,
 				DAE7DD9D1CFED4ED00DD11F0 /* ImagePicker */,
 				DAE7DD9C1CFED4EC00DD11F0 /* Products */,
 			);
@@ -287,10 +270,7 @@
 				DAE7DDF51CFED6DE00DD11F0 /* photo_sel_previewVc@2x.png in Resources */,
 				DAE7DDF81CFED6DE00DD11F0 /* TableViewArrow@2x.png in Resources */,
 				DAE7DDEE1CFED6DE00DD11F0 /* navi_back@2x.png in Resources */,
-				DAE7DDBD1CFED65500DD11F0 /* MY_pic_pic@2x.png in Resources */,
-				DAE7DDBE1CFED65500DD11F0 /* MY_pic_pic@3x.png in Resources */,
 				DAE7DDFB1CFED6DE00DD11F0 /* PhotoPickerCell.xib in Resources */,
-				DAE7DE0E1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@3x.png in Resources */,
 				DAE7DDF41CFED6DE00DD11F0 /* photo_sel_photoPickerVc@2x.png in Resources */,
 				DAE7DDEF1CFED6DE00DD11F0 /* photo_def_photoPickerVc@2x.png in Resources */,
 				DAE7DDF61CFED6DE00DD11F0 /* preview_number_icon@2x.png in Resources */,
@@ -301,7 +281,6 @@
 				DAE7DDF21CFED6DE00DD11F0 /* photo_original_def@2x.png in Resources */,
 				DAE7DDF11CFED6DE00DD11F0 /* photo_number_icon@2x.png in Resources */,
 				DAE7DDF71CFED6DE00DD11F0 /* preview_original_def@2x.png in Resources */,
-				DAE7DE0D1CFEEAD800DD11F0 /* jiudian_icon_close_gray2@2x.png in Resources */,
 				DAE7DDF91CFED6DE00DD11F0 /* VideoSendIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE7DDBA1CFED53300DD11F0 /* LSImageCollectionViewCell.m in Sources */,
+				DA8CDC811D3786E000A3A9F7 /* ImageChooseManage.m in Sources */,
 				DAE7DDEB1CFED6DE00DD11F0 /* AlbumNavigationController.m in Sources */,
 				DAE7DDE91CFED6DE00DD11F0 /* AlbumListController.m in Sources */,
 				DAE7DDA61CFED4ED00DD11F0 /* ViewController.m in Sources */,
@@ -321,12 +300,11 @@
 				DAE7DDA31CFED4ED00DD11F0 /* AppDelegate.m in Sources */,
 				DAE7DDFC1CFED6DE00DD11F0 /* PhotoPickerController.m in Sources */,
 				DAE7DDFF1CFED6DE00DD11F0 /* PhotoPreviewController.m in Sources */,
+				DA8CDC841D37881300A3A9F7 /* Tools.m in Sources */,
 				DAE7DDA01CFED4ED00DD11F0 /* main.m in Sources */,
 				DAE7DDEA1CFED6DE00DD11F0 /* AlbumListTableViewCell.m in Sources */,
 				DAE7DE001CFED6DE00DD11F0 /* VideoPlayerController.m in Sources */,
 				DAE7DDFD1CFED6DE00DD11F0 /* PhotoPickerModel.m in Sources */,
-				DAE7DE061CFEDF6A00DD11F0 /* LSImagePicker.m in Sources */,
-				DAE7DDB71CFED51E00DD11F0 /* LSImagePickerViewController.m in Sources */,
 				DAE7DDE71CFED6DE00DD11F0 /* AlbumDataHandle.m in Sources */,
 				DAE7DDE81CFED6DE00DD11F0 /* AlbumDataModel.m in Sources */,
 				DAE7DDFE1CFED6DE00DD11F0 /* PhotoPreviewCell.m in Sources */,
