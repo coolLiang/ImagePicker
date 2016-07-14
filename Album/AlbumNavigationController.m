@@ -81,10 +81,25 @@
             _tipLable.text = [NSString stringWithFormat:@"请在%@的\"设置-隐私-照片\"选项中，\r允许%@访问你的手机相册。",[UIDevice currentDevice].model, appName];
             [self.view addSubview:_tipLable];
             
+            //
+            __block int count = 0;
+            
             _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
-            dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 0 * NSEC_PER_SEC, 5 * NSEC_PER_SEC);
+            dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC, 0);
             dispatch_source_set_event_handler(_timer, ^{
+                
+                if (count > 30) {
+                    
+                    dispatch_cancel(_timer);
+                    _timer = nil;
+                    
+                }
+                
+                NSLog(@"13");
                 [self observeAuthrizationStatusChange];
+                
+                count ++;
+            
             });
             dispatch_resume(_timer);
         } else {
@@ -97,8 +112,14 @@
 - (void)observeAuthrizationStatusChange {
     
     if ([[AlbumDataHandle manager] authorizationStatusAuthorized]) {
-        [self pushToPhotoPickerViewController];
-        [_tipLable removeFromSuperview];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            [self pushToPhotoPickerViewController];
+            [_tipLable removeFromSuperview];
+            
+        });
+
         if (_timer) {
             dispatch_source_cancel(_timer);
         }
